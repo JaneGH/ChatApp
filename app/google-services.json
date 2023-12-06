@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1079873523052",
+    "project_id": "chatappl-64e29",
+    "storage_bucket": "chatappl-64e29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079873523052:android:7a08f25fbcc84e91daf749",
+        "android_client_info": {
+          "package_name": "com.itclimb.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVpChAcCwOxZibP8FVmpgBFC1uIWpfBwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
