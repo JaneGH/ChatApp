@@ -11,5 +11,10 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="welcome">Welcome</string>
     <string name="login">Login</string>
+    <string name="enter_the_name_dialog_text">Please enter the text of chat group</string>
+    <string name="chat_group_name">chat group name</string>
+    <string name="create_chat_group">Create Chat Group</string>
+    <string name="you_chat_group">"You chat group: "</string>
+    <string name="group_image">group image</string>
 
 </resources>
