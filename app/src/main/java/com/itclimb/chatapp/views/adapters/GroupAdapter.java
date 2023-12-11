@@ -1,5 +1,6 @@
 package com.itclimb.chatapp.views.adapters;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.itclimb.chatapp.R;
 import com.itclimb.chatapp.databinding.ItemCardBinding;
 import com.itclimb.chatapp.model.ChatGroup;
+import com.itclimb.chatapp.views.ChatActivity;
 
 import java.util.ArrayList;
 
@@ -50,6 +52,16 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.GroupViewHol
         public GroupViewHolder(ItemCardBinding itemCardBinding) {
             super(itemCardBinding.getRoot());
             this.itemCardBinding = itemCardBinding;
+            itemCardBinding.getRoot().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+                    ChatGroup clickedChatGroup = groupArrayList.get(position);
+                    Intent intentCard = new Intent(view.getContext(), ChatActivity.class);
+                    intentCard.putExtra("GROUP_NAME", clickedChatGroup.getGroupName());
+                    view.getContext() .startActivity(intentCard );
+                }
+            });
         }
     }
 }

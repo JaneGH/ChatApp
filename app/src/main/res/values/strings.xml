@@ -16,5 +16,7 @@
     <string name="create_chat_group">Create Chat Group</string>
     <string name="you_chat_group">"You chat group: "</string>
     <string name="group_image">group image</string>
+    <string name="messages">Messages</string>
+    <string name="send">send</string>
 
 </resources>

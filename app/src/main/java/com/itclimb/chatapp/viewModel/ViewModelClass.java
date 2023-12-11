@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
+import com.itclimb.chatapp.model.ChatMessage;
 import com.itclimb.chatapp.model.ChatGroup;
 import com.itclimb.chatapp.repository.Repository;
 
@@ -39,4 +40,12 @@ public class ViewModelClass extends AndroidViewModel {
    public void createNewGroup(String groupName) {
         repository.createNewChatGroup(groupName );
    }
+
+   public MutableLiveData<List<ChatMessage >> getChatMessageLiveData (String groupName) {
+        return repository.getChatMessageLiveData(groupName);
+   }
+
+    public void sendMessage(String msg, String chatGroup) {
+        repository.sendMessage(msg, chatGroup  );
+    }
 }
